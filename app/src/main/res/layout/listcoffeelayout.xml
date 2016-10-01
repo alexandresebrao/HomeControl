@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_width="wrap_content"
+    android:paddingTop="5px"
+    android:paddingLeft="5px">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <Button android:id="@+id/btnMakeCoffeee"
+            android:tag=""
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_coffee_icon"
+            android:layout_below="@+id/identity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Machine"
+            android:id="@+id/btnDeleteCoffeeMachine"
+            android:layout_alignBottom="@+id/btnMakeCoffeee"
+            android:layout_toRightOf="@+id/btnMakeCoffeee"
+            android:layout_alignTop="@+id/btnMakeCoffeee" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Use this space"
+            android:id="@+id/identity"
+            android:layout_alignParentTop="true"
+            android:textColor="#000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgCoffeMakingIcon"
+            android:src="@drawable/ic_coffee_icon_green"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/btnDeleteCoffeeMachine"
+
+            android:layout_alignParentTop="true" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MoveMe"
+            android:id="@+id/lblCoffeedescription"
+            android:textColor="#000"
+            android:layout_below="@+id/imgCoffeMakingIcon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</LinearLayout>

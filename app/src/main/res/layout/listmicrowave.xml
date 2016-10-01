@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_width="wrap_content"
+    android:paddingTop="5px"
+    android:paddingLeft="5px">
+    <RelativeLayout
+
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <Button android:id="@+id/btnStartMicrowave"
+            android:tag=""
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_microwave"
+            android:layout_below="@+id/microwaveidentity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Machine"
+            android:id="@+id/btnDeleteMicroWave"
+            android:layout_alignBottom="@+id/btnStartMicrowave"
+            android:layout_toRightOf="@+id/btnStartMicrowave"
+            android:layout_alignTop="@+id/btnStartMicrowave" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Use this space"
+            android:id="@+id/microwaveidentity"
+            android:layout_alignParentTop="true"
+            android:textColor="#000" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:id="@+id/imgMicroWaverIcon"
+            android:src="@drawable/ic_microwave_green"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/btnDeleteMicroWave" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
